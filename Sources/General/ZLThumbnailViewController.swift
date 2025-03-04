@@ -500,7 +500,7 @@ class ZLThumbnailViewController: UIViewController {
             return
         }
         
-        let hud = ZLProgressHUD.show(in: view)
+//        let hud = ZLProgressHUD.show(in: view)
         
         DispatchQueue.global().async {
             var datas: [ZLPhotoModel] = []
@@ -516,7 +516,7 @@ class ZLThumbnailViewController: UIViewController {
             }
             
             ZLMainAsync {
-                hud.hide()
+//                hud.hide()
                 
                 self.arrDataSources.removeAll()
                 self.arrDataSources.append(contentsOf: datas)
